@@ -1,0 +1,17 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Time</title>
+</head>
+<body>
+<h1>Your Schedule</h1>
+<ul>
+{% for item in schedule %}
+<li>{{ item.task }}: {{ item.time_slot }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
